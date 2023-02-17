@@ -41,4 +41,4 @@ console.log("******************single line Output******************");
 
 console.log("My first name is: " + firstName, lastName, age, address, gender, ismarried);
 
- 
+
