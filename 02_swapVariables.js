@@ -24,7 +24,7 @@ var temp = num1
 var num1 = num2;
 num1 = temp;
 
-var temp = num2
+var temp = num2 
 var num2 = num3;
 num3 = temp;
 
