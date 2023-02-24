@@ -93,36 +93,47 @@
 // star();
 
 
-num1 = 10;
-num2 = 1;
-num3 = 3;
-num4 = 2;
-// num5 = 4;
+// num1 = 10;
+// num2 = 1;
+// num3 = 3;
+// num4 = 2;
+// // num5 = 4;
 
-function myFunction(num1,num2,num3,num4) {
-  var cal = num1 - num2 / num3 * num4;
-  return cal
+// function myFunction(num1,num2,num3,num4) {
+//   var cal = num1 - num2 / num3 * num4;
+//   return cal
+// }
+// var result = myFunction(num1,num2,num3,num4);
+// console.log(result);
+
+function mathRandom() {
+  var math = Math.round(Math.random() * (100 - 1) + 1);
+  console.log(math);
+  var evenOdd = math % 2 ? `Even` : `ODD`
+  return evenOdd;
 }
-var result = myFunction(num1,num2,num3,num4);
+var result = mathRandom();
 console.log(result);
 
+function stringCut() {
+  var open = `i_am_talking_about_our_future_idea's.:_5G_Broadbend`;
+  var stringLenth = open.length;
+  var stringNumber = stringLenth % 2 == 0 ?`we will get EVEN Number`:`we will get ODD Number`;
+  var SubString = open.substring(stringNumber);
+  return SubString;
+}
+var result = stringCut();
+console.log(result);
+
+// console.log(Math.floor(Math.random() * 10));
+var result = Number('324e-5');
+console.log(result);// Result = 32.4
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var num = 56
+var resul = num.toString()
+console.log(resul); // Result = 0
+console.log(typeof resul );
+console.log(typeof 56 );
