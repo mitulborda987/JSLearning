@@ -119,21 +119,29 @@ function stringCut() {
   var open = `i_am_talking_about_our_future_idea's.:_5G_Broadbend`;
   var stringLenth = open.length;
   var stringNumber = stringLenth % 2 == 0 ?`we will get EVEN Number`:`we will get ODD Number`;
-  var SubString = open.substring(stringNumber);
+  console.log(stringNumber);
+  var SubString = open.substring(15);
   return SubString;
 }
 var result = stringCut();
 console.log(result);
 
-// console.log(Math.floor(Math.random() * 10));
-var result = Number('324e-5');
-console.log(result);// Result = 32.4
+// // console.log(Math.floor(Math.random() * 10));
+// var result = Number('324e-5');
+// console.log(result);// Result = 32.4
 
 
+// var num = 56
+// var resul = num.toString()
+// console.log(resul); // Result = 0
+// console.log(typeof resul );
+// console.log(typeof 56 );
 
+// // Defining a function expression
+// const mk = function(x, y) {
+//   return x * y;
+// };
 
-var num = 56
-var resul = num.toString()
-console.log(resul); // Result = 0
-console.log(typeof resul );
-console.log(typeof 56 );
+// // Using the function expression
+// console.log(mk(2,5)); // Output: 5
+

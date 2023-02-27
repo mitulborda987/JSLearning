@@ -134,3 +134,8 @@ console.log(typeof myNumber); // number
 
 var afterConversion = myNumber.toString();
 console.log(typeof afterConversion); // string 
+ 
+
+
+
+
