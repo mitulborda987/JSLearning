@@ -41,8 +41,8 @@ voteEligibility(null)
 console.log(`=====================gardeCalculation=====================`);
 
 function gardeCalculation(marks) {
-    if (marks <= 0 || marks > 100 || (typeof marks != "number")||(marks >=0 && marks <30)||(marks == null,undefined)) {
-        console.log(`Your Marks is ${marks}.please provide the valid marks.`); 
+    if (marks <= 0 || marks > 100 || (typeof marks != "number") || (marks >= 0 && marks < 30) || (marks == null, undefined) || isNaN(marks)) {
+        console.log(`Your Marks is ${marks}.please provide the valid marks.`);
         return
     }
     if (marks >= 90) {
