@@ -106,25 +106,25 @@
 // var result = myFunction(num1,num2,num3,num4);
 // console.log(result);
 
-function mathRandom() {
-  var math = Math.round(Math.random() * (100 - 1) + 1);
-  console.log(math);
-  var evenOdd = math % 2 ? `Even` : `ODD`
-  return evenOdd;
-}
-var result = mathRandom();
-console.log(result);
+// function mathRandom() {
+//   var math = Math.round(Math.random() * (100 - 1) + 1);
+//   console.log(math);
+//   var evenOdd = math % 2 ? `Even` : `ODD`
+//   return evenOdd;
+// }
+// var result = mathRandom();
+// console.log(result);
 
-function stringCut() {
-  var open = `i_am_talking_about_our_future_idea's.:_5G_Broadbend`;
-  var stringLenth = open.length;
-  var stringNumber = stringLenth % 2 == 0 ?`we will get EVEN Number`:`we will get ODD Number`;
-  console.log(stringNumber);
-  var SubString = open.substring(15);
-  return SubString;
-}
-var result = stringCut();
-console.log(result);
+// function stringCut() {
+//   var open = `i_am_talking_about_our_future_idea's.:_5G_Broadbend`;
+//   var stringLenth = open.length;
+//   var stringNumber = stringLenth % 2 == 0 ?`we will get EVEN Number`:`we will get ODD Number`;
+//   console.log(stringNumber);
+//   var SubString = open.substring(15);
+//   return SubString;
+// }
+// var result = stringCut();
+// console.log(result);
 
 // // console.log(Math.floor(Math.random() * 10));
 // var result = Number('324e-5');
@@ -144,4 +144,115 @@ console.log(result);
 
 // // Using the function expression
 // console.log(mk(2,5)); // Output: 5
+
+
+
+
+// console.log(`How to find prime number`);
+// var primeNumber = function (num) {
+//   for (let index = 2; index < num; index = index + 1) {
+//     if (num % index == 0) {
+//       console.log(`given ${num} is not a prime number`);
+//       break;
+//     }else{
+//       console.log(`given ${num} is a prime number`);
+
+//     }
+//   }
+// }
+// primeNumber(2)
+// primeNumber(3)
+// primeNumber(4)
+// primeNumber(5)
+// primeNumber(6)
+// primeNumber(7)
+// primeNumber(8)
+// primeNumber(9)
+// primeNumber(10)
+// primeNumber(15)
+// primeNumber(16)
+// primeNumber(17)
+// primeNumber(0)
+// primeNumber(-1)
+
+// for (let index = 2; index <= 10; index = index + 1) {
+//   if (index % 2 == 0) {
+//     console.log(`given ${index} is not a prime number`);
+
+//   } else {
+//     console.log(`given ${index} is a prime number`);
+//   }
+
+// }
+// var num = 15
+// for (let index = 2; index < 15; index++) {
+//   if (num % index == 0) {
+//     console.log(`${index} that is prime number.`);
+//   }
+//   else {
+//     console.log(`${index} that is Not prime number.`);
+//   }
+// }
+
+// function isPrime(n) {
+// 	// Check if n=1 or n=0
+// 	if (n <= 1)
+// 		return false;
+// 	// Check if n=2 or n=3
+// 	if (n == 2 || n == 3)
+// 		return true;
+// 	// Check whether n is divisible by 2 or 3
+// 	if (n % 2 == 0 || n % 3 == 0)
+// 		return false;
+// 	// Check from 5 to square root of n
+// 	// Iterate i by (i+6)
+// 	for (var i = 5; i <= Math.sqrt(n); i = i + 6)
+// 		if (n % i == 0 || n % (i + 2) == 0)
+// 			return false;
+
+// 	return true;
+// }
+
+// // Driver Code
+// isPrime(2)
+// isPrime(3)
+// isPrime(5)
+// isPrime(7)
+// isPrime(15)
+// isPrime(11)
+// isPrime(13)
+// isPrime(17)
+// isPrime(19)
+
+
+// 	? console.log("true")
+// 	: console.log("false");
+
+
+let count = 0
+let i, j
+for (j = 2; j <= 10; j++) {
+
+  for (i = 1; i <= j; i++) {
+    if (j % i == 0)
+      count++
+  }
+  if (count == 2)
+    console.log(j)
+  count = 0
+}
+
+
+var num1 = 10
+var num2 = num1 + 1
+console.log(`num1:${num1} , num2:${num2}`); // num1:10 , num2:11
+
+// Post increament  
+var num1 = 10
+var num2 = num1++ //num1 = num1 + 1 // 11
+console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:10
+
+var num1 = 10
+var num2 = ++num1
+console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:11
 
