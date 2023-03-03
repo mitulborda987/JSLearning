@@ -2,7 +2,7 @@
 console.log(`================COUNT VOWELS AND LAST WORD CHARACTER LENGTH ================`);
 
 console.log(`================STEP:1================`);
-var countVowel = function (str) {
+var countVowel = function (str) {1
     var count = 0;
     for (let index = 0; index < str.length; index++) {
         var char = str.charAt(index);
