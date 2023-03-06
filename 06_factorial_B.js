@@ -1,33 +1,33 @@
 
 
-function factorialofWordsCount(str) {
-    if (str == null) {
-        console.log(`Given String ${str}. Please Enter valid Data`);
-        return
-    }
-    let count = 1
-    let facter = 1
-    for (let index = 0; index < str.length; index++) {
-        let char = str.charAt(index);
-        if (char == " ") {
-            count = count + 1
-            facter = facter * count
-        }
-    }
-    console.log(`The String ${str} Total Word: ${count}`);
-    console.log(`Factorial of given string is: ${facter}`);
-    return count;
-}
-console.log(`---------------------------------------------------------------------`);
-factorialofWordsCount("Revision is the mother of Success")
-console.log(`---------------------------------------------------------------------`);
-factorialofWordsCount("We naver fail, We always learn")
-console.log(`---------------------------------------------------------------------`);
-factorialofWordsCount(null)
-console.log(`---------------------------------------------------------------------`);
-factorialofWordsCount("")
-console.log(`---------------------------------------------------------------------`);
-factorialofWordsCount("Borda Mitul K")
+// function factorialofWordsCount(str) {
+//     if (str == null) {
+//         console.log(`Given String ${str}. Please Enter valid Data`);
+//         return
+//     }
+//     let count = 1
+//     let facter = 1
+//     for (let index = 0; index < str.length; index++) {
+//         let char = str.charAt(index);
+//         if (char == " ") {
+//             count = count + 1
+//             facter = facter * count
+//         }
+//     }
+//     console.log(`The String ${str} Total Word: ${count}`);
+//     console.log(`Factorial of given string is: ${facter}`);
+//     return count;
+// }
+// console.log(`---------------------------------------------------------------------`);
+// factorialofWordsCount("Revision is the mother of Success")
+// console.log(`---------------------------------------------------------------------`);
+// factorialofWordsCount("We naver fail, We always learn")
+// console.log(`---------------------------------------------------------------------`);
+// factorialofWordsCount(null)
+// console.log(`---------------------------------------------------------------------`);
+// factorialofWordsCount("")
+// console.log(`---------------------------------------------------------------------`);
+// factorialofWordsCount("Borda Mitul K")
 
 // console.log(`---------------------------------------------------------------------`);
 
@@ -51,22 +51,26 @@ factorialofWordsCount("Borda Mitul K")
 
 
 
+function factorialOfwords(str) {
+    if (str == undefined || str == null || (isNaN(str) && typeof str == "number")) {
+        console.log(`Given String is ${str} that is invalid data`)
+        return
+    }else{
+        strSplit = str.split(" ")
+        // console.log(strSplit);
+        strLength = strSplit.length
+    }
+    facter = 1; 
+    for (let index = strLength; index >=1; index--) {
+            facter = facter * index;
+        }
+        console.log(`Given String ${str} and its Word length ${strLength}`);
+        console.log(` factorial ${facter}`);
+        return
 
-// function factorialofWordsCount(str) {
-//     if (str == null) {
-//         return (`Given String ${str}. Please Enter valid Data`);
-//     }
-//     let count = 1
-//     let facter = 1
-//     for (let index = 0; index < str.length; index++) {
-//         let char = str.charAt(index);
-//         if (char == " ") {
-//             count = count + 1
-//             facter = facter * count
-//         }
-//     }
-//     console.log(`The String ${str} Total Word: ${count}`);
-//     console.log(`Factorial of given string is: ${facter}`);
-//     return count;
-// }
-// factorialofWordsCount(`"Revision is the mother of Success"`)
+}
+// factorialOfwords(null)
+// factorialOfwords(undefined)
+// factorialOfwords(NaN)
+// factorialOfwords("16")
+factorialOfwords("Revision is the mother of Success")

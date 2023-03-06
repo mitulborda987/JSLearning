@@ -6,7 +6,7 @@ var reverseString = function (str) {
     for (let index = str.length - 1; index >= 0; index--) { // 9 
         var charAt = str.charAt(index);
         reverse = reverse + charAt; // "w"+"o" ==> "wo"
-    }
+    }   
     return reverse;
 }
 var result = reverseString("Do it anyhow");

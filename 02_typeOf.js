@@ -30,6 +30,7 @@ console.log("Data type: " + typeof totalCount);
 
 console.log('----------Update variable----------');
 
+
 totalCount = 107;
 console.log("Result is: " + totalCount);
 console.log("Data type: " + typeof totalCount);

@@ -47,6 +47,8 @@ if (true) {
 } else {
     var age = 37;
 }
+
+
 console.log(age);
 
 

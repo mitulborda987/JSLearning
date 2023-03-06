@@ -2,7 +2,7 @@
 // DIFFRENCE BETWEEN == AND ===
 
 var num1 = 10;
-var num2 = "10";
+var num2 = "10"; // impliciat conversion 
 console.log(num1 == num2); // 10 == "10" String convert into number then compare value; Result = True;
 
 var num1 = 10;
@@ -39,8 +39,8 @@ console.log(`${result} and it's type is:${typeof result}`);  // Result : NaN and
 
 // implicit conversion : Automatic type conversion 
 
-console.log(10 + true); // True value  = 1 
-console.log(10 - false);// False value = 0 
+console.log(10 + true); // True   = 1 
+console.log(10 - false);// False  = 0 
 
 // Implicit conversion to String 
 
@@ -94,7 +94,7 @@ console.log(result); // Result = NaN
 var result = null + undefined
 console.log(result); // Result = NaN
 
-// Explicit conversion : Convert number string and boolean values to number,in that case we can use Number();
+// Explicit conversion : Convert number,string and boolean values to number,in that case we can use Number();
 
 //String to number 
 var result = Number('324');
@@ -109,7 +109,7 @@ console.log(result);// Result = 1
 var result = Number(false);
 console.log(result);// Result = 0
 
-// Explicit Conversion: Invalid String to Number return NaN
+// Explicit Conversion: Invalid String to Number Return NaN
 
 var result = Number('hello');
 console.log(result); // Result = NaN
@@ -134,7 +134,7 @@ console.log(typeof myNumber); // number
 
 var afterConversion = myNumber.toString();
 console.log(typeof afterConversion); // string 
- 
+
 
 
 var num1 = 10
@@ -144,10 +144,29 @@ console.log(`num1:${num1} , num2:${num2}`); // num1:10 , num2:11
 // Post increament   Postpaid 
 var num1 = 10
 var num2 = num1++ //num1 = num1 + 1 // 11
-console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:10
+console.log(`num1:${num1} , num2:${num2}`); // num1:11 , num2:10
 
 // Pre increament   Prepaid 
-var num1 = 10      
+var num1 = 10
 var num2 = ++num1
-console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:11
+console.log(`num1:${num1} , num2:${num2}`); // num1:11 , num2:11
 
+// Three Type of Scope [Globle Scope ,Function Scope ,Block Scope]
+
+// [1] Globle Scope
+function countWord() {
+    var star ="Good Morning"
+    console.log(star); // "star" variable not allow to access outsaid function 
+}
+countWord()
+
+
+{
+var myFrd
+
+}
+console.log(myFrd);
+
+    // let myFrd
+    
+    // console.log(myFrd);
