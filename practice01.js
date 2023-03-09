@@ -51,15 +51,34 @@
 // marriageEligibility("other", 41)
 
 
-let str = "JavaScript is the language Of internet"
-charAT = str.charAt(15)
-console.log(charAT);
+// let str = "JavaScript is the language Of internet"
+// charAT = str.charAt(15)
+// console.log(charAT);
 
-strIndexOf = str.indexOf("i")
-console.log(strIndexOf);
+// strIndexOf = str.indexOf("i")
+// console.log(strIndexOf);
 
-strIndexOf = str.toLocaleUpperCase()
-console.log(strIndexOf);
+// strIndexOf = str.toLocaleUpperCase()
+// console.log(strIndexOf);
 
 
+let totalNumber = [0,2,4,5,8,4,0,8]
+console.log(totalNumber);
+console.log(totalNumber.length);
+console.log(totalNumber.includes(8));
 
+var arrayOfNumber = [10,20,25,15,30,5]
+console.log(arrayOfNumber);
+ arrayOfNumber[3] = 35;
+console.log(arrayOfNumber);
+
+arrayOfNumber[1] = 50;
+console.log(arrayOfNumber);
+
+
+var arrayOfNumbers = [10, 20, 25, 15, 30, 5, 40, 45];
+console.log(arrayOfNumbers);
+
+console.log("==== slice(startIndex) === ");
+let show = arrayOfNumbers.slice(3);
+console.log(show);
