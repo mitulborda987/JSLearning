@@ -262,41 +262,155 @@
 
 
 // 🙋‍👨‍🏫 08/03/2023  🤩 Session-17 🤩 Topic: Array Traversing and Object 🙋‍👨‍🏫
-console.log(`===================Array Traversing=====================`);
-var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
-for (let index = 0; index < arrayOfNumbers.length; index++) {
-    const element = arrayOfNumbers[index];
-    console.log(element); // result : All element set in one column    
-}
-
-// 06_while_loop.js
-
-// WAP to print numbers from 0 to 10
-var index=0; // initialization
-while (index<=10) { // condition
-    console.log(index);
-    index++; // Update Expression
-}
-
-
+// console.log(`===================Array Traversing=====================`);
 // var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
-// var index = 0
-// while (index<arrayOfNumbers.length) {
-//     console.log(arrayOfNumbers[index]);
-//     index++; 
+// for (let index = 0; index < arrayOfNumbers.length; index++) {
+//     const element = arrayOfNumbers[index];
+//     console.log(element); // result : All element set in one column    
+// }
+
+// // 06_while_loop.js
+
+// // WAP to print numbers from 0 to 10
+// var index=0; // initialization
+// while (index<=10) { // condition
+//     console.log(index);
+//     index++; // Update Expression
 // }
 
 
-console.log("Even numbers");
-const arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+// // var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+// // var index = 0
+// // while (index<arrayOfNumbers.length) {
+// //     console.log(arrayOfNumbers[index]);
+// //     index++; 
+// // }
 
-var index=0; // initialization
-let sum = 0;
-while (index<arrayOfNumbers.length) { // condition
-    const element = arrayOfNumbers[index];
-    if(element%2==0) {
-        console.log(element);
-        sum = sum + element;
-    }
-    index++; // Update Expression
-}
+
+// console.log("Even numbers");
+// const arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+
+// var index=0; // initialization
+// let sum = 0;
+// while (index<arrayOfNumbers.length) { // condition
+//     const element = arrayOfNumbers[index];
+//     if(element%2==0) {
+//         console.log(element);
+//         sum = sum + element;
+//     }
+//     index++; // Update Expression
+// }
+
+// 09_object.js
+
+// Object literals
+// let student = {
+//     firstName: "Prashant",
+//     lastName: "Deshmukh",
+//     isWorking: true,
+//     age: 22,
+//     collegeName: "ABC",
+//     id: 123456,
+//     address: {
+//       street: "Wakad",
+//       city: "Pune",
+//       PIN: "431204",
+//     },
+//     school: "Podar School",
+//     friends: ["Bill", "Stew", "Elon"],
+//     show: function () {
+//       console.log("I am show() function");
+//     },
+//     addressDetails: function () {
+//       return `Address is: Street ${this.address.street}, City ${this.address.city}, PIN ${this.address.PIN}`;
+//     },
+//   };
+//   // . Dot Notation
+//   console.log(student.firstName); // ANS : Prashant
+//   console.log(student.age);// ANS : 22
+//   // [] Notation
+//   console.log(student["lastName"]);
+  
+//   // Update property
+//   student.collegeName = "COEP PUNE";
+//   student.age = "25"
+  
+//   // Add new property city = "Mumbai"
+//   student.city = "Mumbai";
+//   student.country = "India";
+  
+//   // Delete the property
+//   delete student.isWorking;
+  
+//   console.table(student);
+  
+//   //Empty Object
+//   let teacher = {};
+//   // firstName = "Mohit"
+  
+//   const array = [];
+  
+//   const arrayOfNumbers = [10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26];
+//   for (let index = 0; index < arrayOfNumbers.length; index++) {
+//     const element = arrayOfNumbers[index];
+//     if (element % 2 == 0) {
+//         array.push(element);
+//     }
+//   }
+//   console.log(array);
+
+
+
+//   let resultAddress = student.addressDetails();
+//   console.log(resultAddress);
+  
+//   student.show();
+  
+//   console.log(student.friends);
+//   console.log(student.friends[student.friends.length - 1]);
+  
+//   student.address.PIN = 431205;
+//   // 431205
+//   console.log(student.address.city);
+  
+//   student.marks = {
+//     math: 80,
+//     physics: 60,
+//     drawing: 70,
+//   };
+//   student.school = "ABC";
+//   console.log(student.marks);
+//   console.log((student.address.city = 431205));
+//   console.log(student);
+//   console.log(typeof student);
+
+// 🙋‍👨‍🏫 08/03/2023  🤩 Session-18 🤩 Topic: Object and Object Traversing 🙋‍👨‍🏫
+
+// Object literals
+let student = {
+    firstName: "Prashant",
+    lastName: "Deshmukh",
+    isWorking: true,
+    age: 22,
+    collegeName: "ABC",
+    id: 123456,
+    address: {
+      street: "Wakad",
+      city: "Pune",
+      PIN: "431204",
+    },
+    school: "Podar School",
+    friends: ["Bill", "Stew", "Elon"],
+    show: function () {
+      console.log("I am show() function");
+    },
+    addressDetails: function () {
+      return `Address is: Street ${this.address.street}, City ${this.address.city}, PIN ${this.address.PIN}`;
+    },
+  };
+
+  student.address.PIN = "123233"
+  console.log(student.address);
+
+  let result = student.friends[2]
+console.log(result);

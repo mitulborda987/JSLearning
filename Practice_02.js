@@ -194,53 +194,6 @@
 //   }
 // }
 
-// function isPrime(n) {
-// 	// Check if n=1 or n=0
-// 	if (n <= 1)
-// 		return false;
-// 	// Check if n=2 or n=3
-// 	if (n == 2 || n == 3)
-// 		return true;
-// 	// Check whether n is divisible by 2 or 3
-// 	if (n % 2 == 0 || n % 3 == 0)
-// 		return false;
-// 	// Check from 5 to square root of n
-// 	// Iterate i by (i+6)
-// 	for (var i = 5; i <= Math.sqrt(n); i = i + 6)
-// 		if (n % i == 0 || n % (i + 2) == 0)
-// 			return false;
-
-// 	return true;
-// }
-
-// // Driver Code
-// isPrime(2)
-// isPrime(3)
-// isPrime(5)
-// isPrime(7)
-// isPrime(15)
-// isPrime(11)
-// isPrime(13)
-// isPrime(17)
-// isPrime(19)
-
-
-// 	? console.log("true")
-// 	: console.log("false");
-
-
-let count = 0
-let i, j
-for (j = 2; j <= 10; j++) {
-
-  for (i = 1; i <= j; i++) {
-    if (j % i == 0)
-      count++
-  }
-  if (count == 2)
-    console.log(j)
-  count = 0
-}
 
 
 var num1 = 10

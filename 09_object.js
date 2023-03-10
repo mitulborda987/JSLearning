@@ -20,23 +20,31 @@ let student = {
     return `Address is: Street ${this.address.street}, City ${this.address.city}, PIN ${this.address.PIN}`;
   },
 };
+
+console.log(student.address.city);
 let resultAddress = student.addressDetails();
 console.log(resultAddress);
 
 student.show();
 
 console.log(student.friends);
-console.log(student.friends[student.friends.length - 1]);
 
+// access Array Last Element 
+console.log(student.friends[student.friends.length - 1]); // ANS: Elon
+
+// PIN valu update 
 student.address.PIN = 431205;
 // 431205
+
 console.log(student.address.city);
 
+// Add New Object IN Student object 
 student.marks = {
   math: 80,
   physics: 60,
   drawing: 70,
 };
+
 student.school = "ABC";
 console.log(student.marks);
 console.log((student.address.city = 431205));

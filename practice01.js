@@ -88,12 +88,36 @@
 //     index++;
 // }
 
-var arrayNumber = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+// var arrayNumber = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
 
-const evenNumbers = [];
-for (let index = 0; index < arrayNumber.length; index++) {
-  if (arrayNumber[index] % 2 == 0) {
-    evenNumbers.push(arrayNumber[index]);
-  }
-}
-console.log(`4. Given Array in Even Numbers: ${evenNumbers}`);
+// const evenNumbers = [];
+// for (let index = 0; index < arrayNumber.length; index++) {
+//   if (arrayNumber[index] % 2 == 0) {
+//     evenNumbers.push(arrayNumber[index]);
+//   }
+// }
+// console.log(`4. Given Array in Even Numbers: ${evenNumbers}`);
+
+// const shiv = {
+//     firstName: "Shivam",
+//     lastName:"borda",
+//     college: "Dharuka"
+// }
+
+// console.log(shiv.college);
+// // shiv.lastName = "Patil"
+// // delete shiv.college
+// shiv.Address = "Maruti Nandan"
+// console.table(shiv)
+
+        function isPrime(num) { // returns boolean
+            if (num <= 1) return false; // negatives
+            if (num % 2 == 0 && num > 2) return false; // even numbers
+            const s = Math.sqrt(num); // store the square to loop faster
+            for(let i = 3; i <= s; i += 2) { // start from 3, stop at the square, increment in twos
+                if(num % i === 0) return false; // modulo shows a divisor was found
+            }
+            return true;
+          }
+        let result = isPrime(11);
+        console.log(`Given Number 11 is Prime Number.`);

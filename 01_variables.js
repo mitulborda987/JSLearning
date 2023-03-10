@@ -3,12 +3,15 @@ console.log('31');
 
 var fullName = "pune"
 console.log(fullName);
-var city;
-console.log(city);
-city ="pune";
-console.log(city);
+
+var city;           // Variable Declare without value 
+console.log(city); //ANS: undefined
+
+city ="pune";   // Variable Initialization
+console.log(city);//ANS: pune
+
 city = "surat";
-console.log(city);
+console.log(city);//ANS: suratss
 
 var age="31"
  age="32"
