@@ -403,14 +403,17 @@ let student = {
     friends: ["Bill", "Stew", "Elon"],
     show: function () {
       console.log("I am show() function");
-    },
-    addressDetails: function () {
+    },ction () {
       return `Address is: Street ${this.address.street}, City ${this.address.city}, PIN ${this.address.PIN}`;
     },
+    addressDetails: fun
+
   };
 
   student.address.PIN = "123233"
   console.log(student.address);
 
-  let result = student.friends[2]
+
+
+  let result = student.friends[student.friends.length - 1]
 console.log(result);

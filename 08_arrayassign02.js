@@ -25,25 +25,50 @@ for (let index = 0; index < arrayNumber.length; index++) {
 }
 console.log(`5. Given Array in Odd Numbers: ${oddNumbers}`);
 console.log(`===========================================================`);
-const evenIndexNumbersElement = [];
+let evenIndexNumbersElement = [];
 let sumOfEvenElements = 0;
- for (let index = 0; index < arrayNumber.length; index = index + 2) {
-   const element = arrayNumber[index];
-   evenIndexNumbersElement.push(arrayNumber[index]);
-   sumOfEvenElements = sumOfEvenElements + element;
- }
- console.log(`6. Given Array in Even Position (Even Index Number) Element: ${evenIndexNumbersElement}`);
+for (let index = 0; index < arrayNumber.length; index++) {
+    if (index % 2 == 0) {
+        element = arrayNumber[index];
+        evenIndexNumbersElement.push(element);
+        sumOfEvenElements = sumOfEvenElements + element;
+    }
+}
+console.log(
+    `6. Given Array in Even Position (Even Index Number) Element: ${evenIndexNumbersElement}`
+);
 console.log(`Sum of Odd Position Element: ${sumOfEvenElements}`);
  console.log(`===========================================================`);
-const oddIndexNumbersElement = [];
+let oddIndexNumbersElement = [];
 let sumOfOddElements = 0;
-for (let index = 1; index < arrayNumber.length; index = index + 2) {
-  const element = arrayNumber[index];
-    oddIndexNumbersElement.push(arrayNumber[index]);
-    sumOfOddElements = sumOfOddElements + element;
+for (let index = 0; index < arrayNumber.length; index++) {
+    if (index % 2 !== 0) {
+        const element = arrayNumber[index];
+        oddIndexNumbersElement.push(element);
+        sumOfOddElements = sumOfOddElements + element;
+    }
 }
 console.log(`7. Given Array in Odd Position (Odd Index Number) Element: ${oddIndexNumbersElement}`);
 console.log(`Sum of Odd Position Element: ${sumOfOddElements}`);
+// const evenIndexNumbersElement = [];
+// let sumOfEvenElements = 0;
+//  for (let index = 0; index < arrayNumber.length; index = index + 2) {
+//    const element = arrayNumber[index];
+//    evenIndexNumbersElement.push(arrayNumber[index]);
+//    sumOfEvenElements = sumOfEvenElements + element;
+//  }
+//  console.log(`6. Given Array in Even Position (Even Index Number) Element: ${evenIndexNumbersElement}`);
+// console.log(`Sum of Odd Position Element: ${sumOfEvenElements}`);
+//  console.log(`===========================================================`);
+// const oddIndexNumbersElement = [];
+// let sumOfOddElements = 0;
+// for (let index = 1; index < arrayNumber.length; index = index + 2) {
+//   const element = arrayNumber[index];
+//     oddIndexNumbersElement.push(arrayNumber[index]);
+//     sumOfOddElements = sumOfOddElements + element;
+// }
+// console.log(`7. Given Array in Odd Position (Odd Index Number) Element: ${oddIndexNumbersElement}`);
+// console.log(`Sum of Odd Position Element: ${sumOfOddElements}`);
  console.log(`===========================================================`);
 let sum = 0;
 for (let index = 0; index < arrayNumber.length; index++) {

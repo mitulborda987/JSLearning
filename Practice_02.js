@@ -28,7 +28,6 @@
 // var stringSlice = great.slice(2, 7)
 // console.log(stringSlice)
 
-
 // //Function with no argument and no return
 
 // function gretting() {
@@ -36,13 +35,11 @@
 // }
 // gretting();
 
-
-// //Function with arguments and no return 
+// //Function with arguments and no return
 // function gret(what) {
 //   console.log(`Meaning full msg ${what}`);
 // }
 // gret(`Good Morning`);
-
 
 // //function with no argument and return
 
@@ -53,7 +50,7 @@
 // var fname = personalDetails()
 // console.log(fname);
 
-// //function with argument and return 
+// //function with argument and return
 // // var num1 = 10;
 // // var num2 = 15;
 // // var num3 = 20;
@@ -64,8 +61,6 @@
 // }
 // var multiplication = greatt(10, 15, 20);
 // console.log(multiplication);
-
-
 
 // function india() {
 //   var string = `JavaScript strings are for storing and manipulating text.`
@@ -82,7 +77,6 @@
 // }
 // india();
 
-
 // function star() {
 //   var numberofcolumn = 5;
 //   for (let i = 1; i <= numberofcolumn; i++) {
@@ -91,7 +85,6 @@
 //   }
 // }
 // star();
-
 
 // num1 = 10;
 // num2 = 1;
@@ -130,7 +123,6 @@
 // var result = Number('324e-5');
 // console.log(result);// Result = 32.4
 
-
 // var num = 56
 // var resul = num.toString()
 // console.log(resul); // Result = 0
@@ -144,9 +136,6 @@
 
 // // Using the function expression
 // console.log(mk(2,5)); // Output: 5
-
-
-
 
 // console.log(`How to find prime number`);
 // var primeNumber = function (num) {
@@ -194,18 +183,16 @@
 //   }
 // }
 
+// var num1 = 10
+// var num2 = num1 + 1
+// console.log(`num1:${num1} , num2:${num2}`); // num1:10 , num2:11
 
+// // Post increament
+// var num1 = 10
+// var num2 = num1++ //num1 = num1 + 1 // 11
+// console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:10
 
-var num1 = 10
-var num2 = num1 + 1
-console.log(`num1:${num1} , num2:${num2}`); // num1:10 , num2:11
-
-// Post increament  
-var num1 = 10
-var num2 = num1++ //num1 = num1 + 1 // 11
-console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:10
-
-var num1 = 10
-var num2 = ++num1
-console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:11
+// var num1 = 10
+// var num2 = ++num1
+// console.log(`num1:${num1} , num2:${num2}`);// num1:11 , num2:11
 

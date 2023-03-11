@@ -110,14 +110,103 @@
 // shiv.Address = "Maruti Nandan"
 // console.table(shiv)
 
-        function isPrime(num) { // returns boolean
-            if (num <= 1) return false; // negatives
-            if (num % 2 == 0 && num > 2) return false; // even numbers
-            const s = Math.sqrt(num); // store the square to loop faster
-            for(let i = 3; i <= s; i += 2) { // start from 3, stop at the square, increment in twos
-                if(num % i === 0) return false; // modulo shows a divisor was found
-            }
-            return true;
-          }
-        let result = isPrime(11);
-        console.log(`Given Number 11 is Prime Number.`);
+// function isPrime(num) { // returns boolean
+//     if (num <= 1) return false; // negatives
+//     if (num % 2 == 0 && num > 2) return false; // even numbers
+//     const s = Math.sqrt(num); // store the square to loop faster
+//     for(let i = 3; i <= s; i += 2) { // start from 3, stop at the square, increment in twos
+//         if(num % i === 0) return false; // modulo shows a divisor was found
+//     }
+//     return true;
+//   }
+// let result = isPrime(11);
+// console.log(`Given Number 11 is Prime Number.`);
+
+// const number = [1,5,9,2,4,3,6,1]
+// console.log(typeof number);
+
+// const student = {
+//   firstName: "Elon",
+//   lastName: "Musk",
+//   age: 54,
+// };
+// const address = {
+//   country: "US",
+//   city: "Silicon Valley",
+//   PIN: "QA2345",
+//   friends : []
+// };
+// address.code = `001`
+// console.log(address);
+
+// let frd = ["mk","kk","ck","bg"]
+//  address.friends.push(frd)
+// console.log(address.friends);
+// console.log(address.friends[0]);
+// delete address.PIN
+// address.country = "india"
+// console.log(address);
+
+// const mergedObject = Object.assign({},student,address)
+// console.table(mergedObject);
+
+// const newObject = {}
+// Object.assign(newObject,student,address)
+// console.table(newObject);
+
+// Object.assign(student,address)
+// console.table(student);
+
+// Object.assign(address,student)
+// console.table(address);
+// console.log(address);
+
+// JavaScript program to add array into
+// an object using push() function
+
+// Creating a JS object to add array into it
+
+const student1 = {
+  firstName: "Elon",
+  lastName: "Musk",
+  age: 54,
+  address: {
+    country: "US",
+    city: "Silicon Valley",
+    PIN: "QA2345",
+  },
+};
+
+const student2 = {
+  firstName: "Gautam",
+  lastName: "Adani",
+  age: 60,
+  address: {
+    country: "India",
+    city: "Mumbai",
+    PIN: "123456",
+  }
+};
+
+let arrayOfStudent = [student1, student2];
+
+function studentDetails() {
+for (const key in arrayOfStudent) {
+  if (Object.hasOwnProperty.call(arrayOfStudent, key)) {
+    const element = arrayOfStudent[key];
+    console.log(`firstName:${element.firstName},lastName:${element.lastName},age:${element.age},
+    country:${element.address.country},City:${element.address.city},PIN:${element.address.PIN}`);
+  }
+}
+}
+studentDetails()
+
+class StudentDetail {
+constructor(firstName,lastName,collegeName){
+        this.firstName = firstName
+        this.lastName = lastName
+        this.collegeName = collegeName
+}
+}
+const school = new StudentDetail( "Shiv","Patel","SVS")
+console.log(school);

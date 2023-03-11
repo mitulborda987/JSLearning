@@ -56,7 +56,7 @@ const mergedObject = Object.assign({}, student, address);
 console.table(mergedObject);
 
 // Second way 
-const newObject = {};
+const newObject = {}; // Assign two object in Refrence object (newObject)
 Object.assign(newObject, student, address);
 console.table(newObject);
 

@@ -31,6 +31,7 @@ let yesBank = {
 };
 
 const arrayOfBanks = [sbiBank, axisBank, hdfcBank, yesBank];
+
 for (let index = 0; index < arrayOfBanks.length; index++) {
   const element = arrayOfBanks[index];
   console.log(`${element.bankName}, ${element.location}, ${element.account}, ${element.interestRate}`);
@@ -49,3 +50,26 @@ for (let index = 0; index < arrayOfBanks.length; index++) {
 // for (const value of array) {
 //    console.log(value); 
 // }
+
+
+const employee = {
+  id: 124567,
+  name: "Elon Musk",
+  country: "US",
+  city: "Silicon Valley",
+};
+
+for (const key in employee) {
+  if (Object.hasOwnProperty.call(employee, key)) {
+    const element = employee[key];
+    console.log(element);
+  }
+}
+let keyOfemployee = Object.keys(employee)
+console.log(keyOfemployee);
+
+let valuesOfemployee = Object.values(employee)
+console.log(valuesOfemployee);
+
+let valuesOffromEntries = Object.entries(employee)
+console.log(valuesOffromEntries[0] [0]); console.log(valuesOffromEntries[0] [1]);
