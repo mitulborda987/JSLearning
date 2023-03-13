@@ -166,47 +166,67 @@
 
 // Creating a JS object to add array into it
 
-const student1 = {
-  firstName: "Elon",
-  lastName: "Musk",
-  age: 54,
-  address: {
-    country: "US",
-    city: "Silicon Valley",
-    PIN: "QA2345",
-  },
-};
+// const student1 = {
+//   firstName: "Elon",
+//   lastName: "Musk",
+//   age: 54,
+//   address: {
+//     country: "US",
+//     city: "Silicon Valley",
+//     PIN: "QA2345",
+//   },
+// };
 
-const student2 = {
-  firstName: "Gautam",
-  lastName: "Adani",
-  age: 60,
-  address: {
-    country: "India",
-    city: "Mumbai",
-    PIN: "123456",
-  }
-};
+// const student2 = {
+//   firstName: "Gautam",
+//   lastName: "Adani",
+//   age: 60,
+//   address: {
+//     country: "India",
+//     city: "Mumbai",
+//     PIN: "123456",
+//   }
+// };
 
-let arrayOfStudent = [student1, student2];
+// let arrayOfStudent = [student1, student2];
 
-function studentDetails() {
-for (const key in arrayOfStudent) {
-  if (Object.hasOwnProperty.call(arrayOfStudent, key)) {
-    const element = arrayOfStudent[key];
-    console.log(`firstName:${element.firstName},lastName:${element.lastName},age:${element.age},
-    country:${element.address.country},City:${element.address.city},PIN:${element.address.PIN}`);
-  }
-}
-}
-studentDetails()
+// function studentDetails() {
+// for (const key in arrayOfStudent) {
+//   if (Object.hasOwnProperty.call(arrayOfStudent, key)) {
+//     const element = arrayOfStudent[key];
+//     console.log(`firstName:${element.firstName},lastName:${element.lastName},age:${element.age},
+//     country:${element.address.country},City:${element.address.city},PIN:${element.address.PIN}`);
+//   }
+// }
+// }
+// studentDetails()
 
-class StudentDetail {
-constructor(firstName,lastName,collegeName){
-        this.firstName = firstName
-        this.lastName = lastName
-        this.collegeName = collegeName
-}
-}
-const school = new StudentDetail( "Shiv","Patel","SVS")
-console.log(school);
+// class StudentDetail {
+// constructor(firstName,lastName,collegeName){
+//         this.firstName = firstName
+//         this.lastName = lastName
+//         this.collegeName = collegeName
+// }
+// }
+// const school = new StudentDetail( "Shiv","Patel","SVS")
+// console.log(school);
+
+
+var firstName;
+firstName = "virat";
+
+var lastName = "kohli";
+firstName = "King Kohli"
+
+ var lastName;
+ console.log(lastName);
+
+var num = 10
+ if (num = 10) {
+    var gret = "Good morning"
+ }
+ console.log(gret);
+
+ function greet() {
+  
+ }
