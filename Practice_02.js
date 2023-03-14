@@ -200,28 +200,40 @@
 
 // prime number 
 
-function isPrimeNumber(num) {
-        for (let index = 2; index < num; index++) {
-            if (num % index == 0 ) {
-            return false
-            }
-            else true
-        }
-        console.log(`Given number ${num} is Prime number:` `${false}` ? No : Yes);
+// function isPrimeNumber(num) {
+//         for (let index = 2; index < num; index++) {
+//             if (num % index == 0 ) {
+//             return false
+//             }
+//             else true
+//         }
+//         console.log(`Given number ${num} is Prime number:` `${false}` ? No : Yes);
+// }
+
+// // let result = isPrimeNumber(7)
+// // console.log(result);
+// isPrimeNumber(0)
+// isPrimeNumber(2)
+// isPrimeNumber(3)
+// isPrimeNumber(4)
+// isPrimeNumber(5)
+// isPrimeNumber(6)
+// isPrimeNumber(7)
+// isPrimeNumber(8)
+// isPrimeNumber(9)
+// isPrimeNumber(10)
+// isPrimeNumber(11)
+// isPrimeNumber(12)
+
+
+const person = {
+    fullName: "MS Dhoni",
+    age : 38
 }
+console.log("Deep clone using spread operator");
+const newPlayer = { ...person }; // Deep clone using spread operator
+newPlayer.fullName = "Caption cool Dhoni"
+console.log(newPlayer);
+console.log(person);
 
-// let result = isPrimeNumber(7)
-// console.log(result);
-isPrimeNumber(0)
-isPrimeNumber(2)
-isPrimeNumber(3)
-isPrimeNumber(4)
-isPrimeNumber(5)
-isPrimeNumber(6)
-isPrimeNumber(7)
-isPrimeNumber(8)
-isPrimeNumber(9)
-isPrimeNumber(10)
-isPrimeNumber(11)
-isPrimeNumber(12)
-
+// newPlayer.age = 42;
